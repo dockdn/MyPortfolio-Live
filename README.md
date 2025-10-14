@@ -64,6 +64,9 @@ Then open in your browser:
 bash
 Copy code
 http://localhost/MyPortfolio/family.php
+
+---
+
 🌸 Credits & Design Notes
 All visuals and written content are created by myself.
 Images are optimized and stored under /assets/img/.
