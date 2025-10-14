@@ -5,6 +5,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Favorites • Danielle</title>
+  <link rel="icon" type="image/png" href="/MyPortfolio/assets/img/favicon.png">
   <link rel="stylesheet" href="/MyPortfolio/assets/css/style.css?v=103">
 </head>
 <body>

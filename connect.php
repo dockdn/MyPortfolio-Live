@@ -5,9 +5,9 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Connect • Danielle</title>
+  <link rel="icon" type="image/png" href="/MyPortfolio/assets/img/favicon.png">
   <link rel="stylesheet" href="/MyPortfolio/assets/css/style.css?v=107">
 
-  <!-- Page-local button accents (keeps global CSS unchanged) -->
   <style>
     .btn--primary { background:#111; color:#fff; border-color:#111; }
     .btn--primary:hover { background:#333; }
@@ -15,7 +15,6 @@
     .btn--full { width:100%; text-align:center; }
     .contact-actions { display:flex; flex-wrap:wrap; gap:10px; }
     .contact-actions .btn { flex:1 1 200px; }
-    /* ✅ header image now points to danielle.png */
     .hero-banner__image--connect { background-image:url('/MyPortfolio/assets/img/danielle.png'); }
     .muted { color:#555; font-size:13px; margin-top:6px; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
