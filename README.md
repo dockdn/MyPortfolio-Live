@@ -71,7 +71,6 @@ If it doesn’t load, make sure **Apache** is started in your XAMPP control pane
 
 All visuals and written content are created by me.
 Images are optimized and stored under /assets/img/.
-The site features a custom favicon (/assets/img/favicon.png) — a small “d” logo I designed myself.
 Typography, color palette, and layout choices were inspired by modern Pinterest-style boards and soft pastel UI themes.
 
 💌 Connect
