@@ -65,26 +65,19 @@ cp -r MyPortfolio-Live MyPortfolio
 You should now see your portfolio running locally on **localhost** through **XAMPP**.  
 If it doesn’t load, make sure **Apache** is started in your XAMPP control panel and that the project folder name matches exactly.
 
----
+🌸 Credits & Design Notes
 
-## 🌸 Credits & Design Notes
-
-All visuals and written content are created by me.  
-Images are optimized and stored under `/assets/img/`.  
-The site features a custom favicon (`/assets/img/favicon.png`) — a small **“d” logo** I designed myself.  
+All visuals and written content are created by me.
+Images are optimized and stored under /assets/img/.
+The site features a custom favicon (/assets/img/favicon.png) — a small “d” logo I designed myself.
 Typography, color palette, and layout choices were inspired by modern Pinterest-style boards and soft pastel UI themes.
 
----
-
-## 💌 Connect
+💌 Connect
 
 If you’d like to reach out, collaborate, or just say hi:
 
-📧 [danixielle@gmail.com](mailto:danixielle@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/danielledockery/)  
-🐙 [GitHub](https://github.com/dockdn)
+📧 danixielle@gmail.com
 
----
+🔗 LinkedIn
 
-> _“Every detail matters. Create something beautiful, meaningful, and a little bit you.”_ 🐾
-
+🐙 GitHub
