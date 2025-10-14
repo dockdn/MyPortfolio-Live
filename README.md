@@ -7,8 +7,8 @@ This site was built to showcase my projects, creativity, and personality in one 
 
 ## ✨ About
 
-This portfolio was designed and developed entirely by me — Danielle Dockery 💻  
-It’s built using **HTML, CSS, PHP**, and a touch of JavaScript for interactivity.  
+This portfolio was designed and developed entirely by me — **Danielle Dockery** 💻  
+It’s built using **HTML, CSS, PHP**, and a touch of **JavaScript** for interactivity.  
 Every page is styled to match my personal aesthetic — minimal, clean, and cozy.
 
 ### 🧭 Pages Included
@@ -29,8 +29,8 @@ Every page is styled to match my personal aesthetic — minimal, clean, and cozy
 - **Frontend:** HTML5, CSS3 (custom + responsive)
 - **Backend:** PHP 8
 - **Hosting:** GitHub + FTP Auto-Deploy
-- **Deployment:** GitHub Actions → FTP (using [SamKirkland/FTP-Deploy-Action](https://github.com/SamKirkland/FTP-Deploy-Action))
-- **Tools:** VS Code, XAMPP, Git, Canva, and a lot of Dr. Pepper 🥤
+- **Deployment:** GitHub Actions → FTP (https://github.com/SamKirkland/FTP-Deploy-Action)
+- **Tools:** VS Code, XAMPP, Git, Canva, and a lot of coffee ☕️
 
 ---
 
@@ -38,7 +38,7 @@ Every page is styled to match my personal aesthetic — minimal, clean, and cozy
 
 This repo uses a **GitHub Actions workflow** that automatically uploads the site to my hosting server every time I push new changes to the `main` branch.
 
-### Deployment setup:
+### Deployment setup
 1. The workflow file lives at:  
    `.github/workflows/deploy.yml`
 2. It runs on each `git push` to `main`.
@@ -55,23 +55,23 @@ You can view or edit deployment logs in the **Actions** tab of this repo.
 ## 🪄 Local Development
 
 To run locally (using XAMPP or MAMP):
+
 ```bash
 cd /Applications/XAMPP/xamppfiles/htdocs/
 cp -r MyPortfolio-Live MyPortfolio
-Then open:
+Then open in your browser:
 
 bash
 Copy code
 http://localhost/MyPortfolio/family.php
 🌸 Credits & Design Notes
-All visuals and written content are created by me.
+All visuals and written content are created by myself.
 Images are optimized and stored under /assets/img/.
-The site features a custom favicon (/assets/img/favicon.png) — a small “d” logo designed by me.
 
 💌 Connect
 If you’d like to reach out, collaborate, or just say hi:
 📧 danixielle@gmail.com
-[🔗 LinkedIn]([https://www.linkedin.com/in/danielledockery/])
-[🐙 GitHub]([https://github.com/dockdn])
+🔗 LinkedIn
+🐙 GitHub
 
 “Every detail matters. Create something beautiful, meaningful, and a little bit you.” 🌷
