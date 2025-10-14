@@ -33,7 +33,7 @@
     <div class="hero-banner__image" style="background-image:url('assets/img/about.png');"></div>
     <div class="hero-banner__content">
       <h2 class="hero-banner__title">About Me</h2>
-      <p class="hero-banner__text">Short intro placeholder.</p>
+      <p class="hero-banner__text">All about me, the work I do, and the people I love.</p>
     </div>
   </section>
 
