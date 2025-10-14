@@ -26,29 +26,28 @@ Every page is styled to match my personal aesthetic — minimal, clean, and cozy
 
 ## 🧠 Tech Stack
 
-- **Frontend:** HTML5, CSS3 (custom + responsive)
+- **Frontend:** HTML5 + CSS3 (custom responsive)
 - **Backend:** PHP 8
 - **Hosting:** GitHub + FTP Auto-Deploy
-- **Deployment:** GitHub Actions → FTP (https://github.com/SamKirkland/FTP-Deploy-Action)
-- **Tools:** VS Code, XAMPP, Git, Canva, and a lot of coffee ☕️
+- **Deployment:** GitHub Actions → FTP (using [Sam Kirkland FTP Deploy Action](https://github.com/SamKirkland/FTP-Deploy-Action))
+- **Tools:** VS Code, XAMPP, Git, Canva ☕️
 
 ---
 
 ## 🚀 Deployment
 
-This repo uses a **GitHub Actions workflow** that automatically uploads the site to my hosting server every time I push new changes to the `main` branch.
+This repo uses a **GitHub Actions** workflow that automatically uploads the site to my hosting server every time I push new changes to `main`.
 
-### Deployment setup
-1. The workflow file lives at:  
-   `.github/workflows/deploy.yml`
-2. It runs on each `git push` to `main`.
-3. Secrets configured in GitHub include:
-   - `FTP_SERVER`
-   - `FTP_USERNAME`
-   - `FTP_PASSWORD`
+### Setup
+1. Workflow file: `.github/workflows/deploy.yml`  
+2. Runs on each `git push origin main`  
+3. GitHub Secrets:
+   - `FTP_SERVER`  
+   - `FTP_USERNAME`  
+   - `FTP_PASSWORD`  
    - `FTP_ROOT_DIR`
 
-You can view or edit deployment logs in the **Actions** tab of this repo.
+Check deployment logs in the **Actions** tab.
 
 ---
 
@@ -59,22 +58,3 @@ To run locally (using XAMPP or MAMP):
 ```bash
 cd /Applications/XAMPP/xamppfiles/htdocs/
 cp -r MyPortfolio-Live MyPortfolio
-Then open in your browser:
-
-bash
-Copy code
-http://localhost/MyPortfolio/family.php
-
----
-
-🌸 Credits & Design Notes
-All visuals and written content are created by myself.
-Images are optimized and stored under /assets/img/.
-
-💌 Connect
-If you’d like to reach out, collaborate, or just say hi:
-📧 danixielle@gmail.com
-🔗 LinkedIn
-🐙 GitHub
-
-“Every detail matters. Create something beautiful, meaningful, and a little bit you.” 🌷
