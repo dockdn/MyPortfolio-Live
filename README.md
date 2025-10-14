@@ -71,7 +71,7 @@ The site features a custom favicon (assets/img/favicon.png) — a small “d” 
 💌 Connect
 If you’d like to reach out, collaborate, or just say hi:
 📧 danixielle@gmail.com
-[🔗 LinkedIn (https://www.linkedin.com/in/danielledockery/)]
-[🐙 GitHub (https://github.com/dockdn)]
+[🔗 LinkedIn] (https://www.linkedin.com/in/danielledockery/)
+[🐙 GitHub] (https://github.com/dockdn)
 
 “Every detail matters. Create something beautiful, meaningful, and a little bit you.” 🌷
