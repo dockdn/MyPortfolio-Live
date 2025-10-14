@@ -64,6 +64,8 @@ cp -r MyPortfolio-Live MyPortfolio
 
 You should now see your portfolio running locally on **localhost** through **XAMPP**.  
 If it doesn’t load, make sure **Apache** is started in your XAMPP control panel and that the project folder name matches exactly.
+```
+
 
 🌸 Credits & Design Notes
 
