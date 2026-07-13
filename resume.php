@@ -5,8 +5,8 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resume • Danielle</title>
-  <link rel="icon" type="image/png" href="/MyPortfolio/assets/img/favicon.png">
-  <link rel="stylesheet" href="/MyPortfolio/assets/css/style.css?v=99">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css?v=99">
 
   <style>
     .board.board--resume{
@@ -64,17 +64,17 @@
 <div class="site-wrap">
 
   <header class="header">
-    <a class="brand" href="/MyPortfolio/index.php">
-      <img src="/MyPortfolio/assets/img/logo.png" alt="Danielle Logo" class="brand__logo-img">
+    <a class="brand" href="/index.php">
+      <img src="/assets/img/logo.png" alt="Danielle Logo" class="brand__logo-img">
       <span class="brand__text">Danielle.</span>
     </a>
     <nav class="nav">
-      <a href="/MyPortfolio/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
-      <a href="/MyPortfolio/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
-      <a href="/MyPortfolio/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
-      <a href="/MyPortfolio/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
-      <a href="/MyPortfolio/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
-      <a href="/MyPortfolio/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
+      <a href="/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
+      <a href="/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
+      <a href="/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
+      <a href="/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
+      <a href="/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
+      <a href="/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
     </nav>
   </header>
 
@@ -82,12 +82,12 @@
 
   <section class="board board--resume">
     <article class="pin pin--resume-left">
-      <img class="pin__media" src="/MyPortfolio/assets/img/resume.png" alt="Resume preview">
+      <img class="pin__media" src="/assets/img/resume.png" alt="Resume preview">
       <div class="pin__content">
         <h3 class="pin__title">My Resume (PDF)</h3>
         <div class="pin__actions">
         <?php
-          $resumeUrl = '/MyPortfolio/assets/css/docs/resume.pdf';       
+          $resumeUrl = '/assets/css/docs/resume.pdf';       
           $resumeFs  = $_SERVER['DOCUMENT_ROOT'] . $resumeUrl;            
           if (file_exists($resumeFs)) {
             echo '<a class="btn btn--primary btn--icon" href="'.$resumeUrl.'" target="_blank" rel="noopener" aria-label="Open resume PDF">📄 <span>Open PDF</span></a>';
@@ -99,7 +99,7 @@
     </article>
 
     <article class="pin pin--landscape pin--rec">
-      <img class="pin__media" src="/MyPortfolio/assets/img/lettershero.png" alt="Letters of Recommendation">
+      <img class="pin__media" src="/assets/img/lettershero.png" alt="Letters of Recommendation">
       <div class="pin__content">
         <h3 class="pin__title">Letters of Recommendation</h3>
         <p class="pin__text">Please wait with me as my letters are being written. ❤️ </p>
@@ -107,7 +107,7 @@
     </article>
 
     <article class="pin pin--landscape pin--linkedin">
-      <img class="pin__media" src="/MyPortfolio/assets/img/linkedin.png" alt="LinkedIn">
+      <img class="pin__media" src="/assets/img/linkedin.png" alt="LinkedIn">
       <div class="pin__content">
         <h3 class="pin__title">LinkedIn</h3>
         <p class="pin__text">Let’s connect professionally.</p>
@@ -134,7 +134,7 @@
   const modal     = document.getElementById('pdfModal');
   const pdfFrame  = document.getElementById('pdfFrame');
   const closeBtn  = document.getElementById('closeModalBtn');
-  const RESUME_URL = '/MyPortfolio/assets/css/docs/resume.pdf';
+  const RESUME_URL = '/assets/css/docs/resume.pdf';
 
   viewBtn?.addEventListener('click', () => {
     pdfFrame.src = RESUME_URL + '?v=' + Date.now();
