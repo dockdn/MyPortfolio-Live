@@ -18,6 +18,15 @@
     .hero-banner__image--connect { background-image:url('/assets/img/danielle.png'); }
     .muted { color:#555; font-size:13px; margin-top:6px; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .board--connect {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-rows: auto;
+      align-items: start;
+    }
+    .board--connect .pin__content { min-height: 132px; }
+    @media (max-width: 720px) {
+      .board--connect { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -51,7 +60,7 @@
   </section>
 
   <!-- GRID -->
-  <section class="board">
+  <section class="board board--connect">
 
     <!-- Primary actions card -->
     <article class="pin">
@@ -60,7 +69,7 @@
         <p class="pin__text">I’m open to internships, collabs, and cool side projects.</p>
         <div class="contact-actions">
           <!-- LINKEDIN -->
-          <a class="btn btn--primary btn--icon" href="https:/www.linkedin.com/in/danielledockery" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+          <a class="btn btn--primary btn--icon" href="https://www.linkedin.com/in/danielledockery" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
             <span>🔗</span><span>LinkedIn</span>
           </a>
 
@@ -83,7 +92,7 @@
       <div class="pin__content">
         <h3 class="pin__title">GitHub</h3>
         <p class="pin__text">See more code, WIPs, and experiments.</p>
-        <a class="btn btn--primary btn--icon" href="https:/github.com/dockdn" target="_blank" rel="noopener" aria-label="Open Danielle's GitHub">
+        <a class="btn btn--primary btn--icon" href="https://github.com/dockdn" target="_blank" rel="noopener" aria-label="Open Danielle's GitHub">
           🐙 <span>View GitHub</span>
         </a>
       </div>
@@ -122,10 +131,16 @@
 </div>
 
 <script>
-  / LAYOUT
+  /* LAYOUT */
   function layoutPins() {
     const grid = document.querySelector('.board');
     if (!grid) return;
+    if (grid.classList.contains('board--connect')) {
+      grid.querySelectorAll('.pin').forEach((item) => {
+        item.style.gridRowEnd = 'auto';
+      });
+      return;
+    }
 
     const rowH = parseInt(getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
     const gap  = parseInt(getComputedStyle(grid).getPropertyValue('gap'));
@@ -152,7 +167,7 @@
       }
     });
 
-    / QUICK COPY EMAIL CUTIE
+    /* QUICK COPY EMAIL CUTIE */
     const btn = document.getElementById('copyEmailBtn');
     const emailEl = document.getElementById('emailText');
     btn?.addEventListener('click', async () => {
