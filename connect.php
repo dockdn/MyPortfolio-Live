@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Connect • Danielle</title>
   <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-  <link rel="stylesheet" href="/MyPortfolio/assets/css/style.css?v=107">
+  <link rel="stylesheet" href="/assets/css/style.css?v=107">
 
   <style>
     .btn--primary { background:#111; color:#fff; border-color:#111; }
@@ -15,7 +15,7 @@
     .btn--full { width:100%; text-align:center; }
     .contact-actions { display:flex; flex-wrap:wrap; gap:10px; }
     .contact-actions .btn { flex:1 1 200px; }
-    .hero-banner__image--connect { background-image:url('/MyPortfolio/assets/img/danielle.png'); }
+    .hero-banner__image--connect { background-image:url('/assets/img/danielle.png'); }
     .muted { color:#555; font-size:13px; margin-top:6px; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
   </style>
@@ -24,17 +24,17 @@
 <div class="site-wrap">
 
   <header class="header">
-    <a class="brand" href="/MyPortfolio/index.php">
-      <img src="/MyPortfolio/assets/img/logo.png" alt="Danielle Logo" class="brand__logo-img">
+    <a class="brand" href="/index.php">
+      <img src="/assets/img/logo.png" alt="Danielle Logo" class="brand__logo-img">
       <span class="brand__text">Danielle.</span>
     </a>
     <nav class="nav">
-      <a href="/MyPortfolio/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
-      <a href="/MyPortfolio/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
-      <a href="/MyPortfolio/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
-      <a href="/MyPortfolio/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
-      <a href="/MyPortfolio/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
-      <a href="/MyPortfolio/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
+      <a href="/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
+      <a href="/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
+      <a href="/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
+      <a href="/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
+      <a href="/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
+      <a href="/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
     </nav>
   </header>
 
@@ -60,7 +60,7 @@
         <p class="pin__text">I’m open to internships, collabs, and cool side projects.</p>
         <div class="contact-actions">
           <!-- LINKEDIN -->
-          <a class="btn btn--primary btn--icon" href="https://www.linkedin.com/in/danielledockery" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+          <a class="btn btn--primary btn--icon" href="https:/www.linkedin.com/in/danielledockery" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
             <span>🔗</span><span>LinkedIn</span>
           </a>
 
@@ -79,11 +79,11 @@
 
     <!-- GITHUB -->
     <article class="pin">
-      <img class="pin__media ar-4x3" src="/MyPortfolio/assets/img/cutiegithub.png" alt="GitHub">
+      <img class="pin__media ar-4x3" src="/assets/img/cutiegithub.png" alt="GitHub">
       <div class="pin__content">
         <h3 class="pin__title">GitHub</h3>
         <p class="pin__text">See more code, WIPs, and experiments.</p>
-        <a class="btn btn--primary btn--icon" href="https://github.com/dockdn" target="_blank" rel="noopener" aria-label="Open Danielle's GitHub">
+        <a class="btn btn--primary btn--icon" href="https:/github.com/dockdn" target="_blank" rel="noopener" aria-label="Open Danielle's GitHub">
           🐙 <span>View GitHub</span>
         </a>
       </div>
@@ -91,11 +91,11 @@
 
     <!-- RESUME -->
     <article class="pin">
-      <img class="pin__media ar-21x9" src="/MyPortfolio/assets/img/resume.png" alt="Resume preview">
+      <img class="pin__media ar-21x9" src="/assets/img/resume.png" alt="Resume preview">
       <div class="pin__content">
         <h3 class="pin__title">Resume</h3>
         <?php
-          $resumeUrl = '/MyPortfolio/assets/css/docs/resume.pdf';       
+          $resumeUrl = '/assets/css/docs/resume.pdf';       
           $resumeFs  = $_SERVER['DOCUMENT_ROOT'] . $resumeUrl;            
           if (file_exists($resumeFs)) {
             echo '<a class="btn btn--primary btn--icon" href="'.$resumeUrl.'" target="_blank" rel="noopener" aria-label="Open resume PDF">📄 <span>Open PDF</span></a>';
@@ -108,7 +108,7 @@
 
     <!-- COPY EMAIL -->
     <article class="pin">
-    <!--  <img class="pin__media ar-mini" src="/MyPortfolio/assets/img/projects-contact.jpg" alt="Copy email"> -->
+    <!--  <img class="pin__media ar-mini" src="/assets/img/projects-contact.jpg" alt="Copy email"> -->
       <div class="pin__content">
         <h3 class="pin__title">Email (quick copy)</h3>
         <p class="pin__text"><span class="mono" id="emailText">danixielle@gmail.com</span></p>
@@ -122,7 +122,7 @@
 </div>
 
 <script>
-  // LAYOUT
+  / LAYOUT
   function layoutPins() {
     const grid = document.querySelector('.board');
     if (!grid) return;
@@ -152,7 +152,7 @@
       }
     });
 
-    // QUICK COPY EMAIL CUTIE
+    / QUICK COPY EMAIL CUTIE
     const btn = document.getElementById('copyEmailBtn');
     const emailEl = document.getElementById('emailText');
     btn?.addEventListener('click', async () => {
