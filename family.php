@@ -5,8 +5,8 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Family • Danielle</title>
-  <link rel="icon" type="image/png" href="/MyPortfolio/assets/img/favicon.png">
-  <link rel="stylesheet" href="/MyPortfolio/assets/css/style.css?v=105">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css?v=105">
 
   <style>
     .pin--wide { grid-column: span 2; }
@@ -22,24 +22,24 @@
 <div class="site-wrap">
 
   <header class="header">
-    <a class="brand" href="/MyPortfolio/index.php">
-      <img src="/MyPortfolio/assets/img/logo.png" alt="Danielle Logo" class="brand__logo-img">
+    <a class="brand" href="/index.php">
+      <img src="/assets/img/logo.png" alt="Danielle Logo" class="brand__logo-img">
       <span class="brand__text">Danielle.</span>
     </a>
     <nav class="nav">
-      <a href="/MyPortfolio/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
-      <a href="/MyPortfolio/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
-      <a href="/MyPortfolio/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
-      <a href="/MyPortfolio/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
-      <a href="/MyPortfolio/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
-      <a href="/MyPortfolio/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
+      <a href="/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
+      <a href="/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
+      <a href="/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
+      <a href="/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
+      <a href="/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
+      <a href="/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
     </nav>
   </header>
 
   <h1 class="page-title">Family</h1>
 
   <section class="hero-banner">
-    <div class="hero-banner__image" style="background-image:url('/MyPortfolio/assets/img/wholefamily.png');"></div>
+    <div class="hero-banner__image" style="background-image:url('/assets/img/wholefamily.png');"></div>
     <div class="hero-banner__content">
       <h2 class="hero-banner__title">My People</h2>
       <p class="hero-banner__text">My family - my blood and my chosen members. Each of these people inspire me to be the best at what I do and drive me to want to make a difference in this world. My main mission is to create accessible and user-frieldly spaces for all kinds of people. Everyone has a story that you don't know about. My people are living proof.</p>
@@ -48,7 +48,7 @@
 
   <section class="board">
     <article class="pin pin--wide">
-      <img class="pin__media ar-21x9" src="/MyPortfolio/assets/img/mom+uncs.png" alt="Mom + Uncs">
+      <img class="pin__media ar-21x9" src="/assets/img/mom+uncs.png" alt="Mom + Uncs">
       <div class="pin__content">
         <h3 class="pin__title">Highlights</h3>
         <p class="pin__text">
@@ -61,12 +61,12 @@
     </article>
 
     <article class="pin pin--small">
-      <img class="pin__media ar-4x3" src="/MyPortfolio/assets/img/younglove.png" alt="My Boyfriend">
+      <img class="pin__media ar-4x3" src="/assets/img/younglove.png" alt="My Boyfriend">
       <div class="pin__content"><h3 class="pin__title">Young Love.</h3></div>
     </article>
 
     <article class="pin">
-      <img class="pin__media ar-1x1" src="/MyPortfolio/assets/img/gradday.png" alt="GradDay Picture">
+      <img class="pin__media ar-1x1" src="/assets/img/gradday.png" alt="GradDay Picture">
       <div class="pin__content">
         <h3 class="pin__title">Grad Day</h3>
         <p class="pin__text"><i>Coming Fall 2025</i></p>
@@ -74,7 +74,7 @@
     </article>
 
     <article class="pin">
-      <img class="pin__media ar-3x4" src="/MyPortfolio/assets/img/chiquito.png" alt="My Little Brother">
+      <img class="pin__media ar-3x4" src="/assets/img/chiquito.png" alt="My Little Brother">
       <div class="pin__content">
         <h3 class="pin__title">My Inspiration</h3>
         <p class="pin__text">
@@ -87,7 +87,7 @@
     </article>
 
     <article class="pin">
-      <img class="pin__media ar-mini" src="/MyPortfolio/assets/img/familyhero.png" alt="Share a memory">
+      <img class="pin__media ar-mini" src="/assets/img/familyhero.png" alt="Share a memory">
       <div class="pin__content">
         <h3 class="pin__title">Share a memory</h3>
         <a
