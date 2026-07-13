@@ -79,6 +79,68 @@
       </div>
     </article>
 
+    <!-- FEATURED WORK -->
+    <article class="pin">
+      <div class="carousel" id="featuredCarousel" aria-label="Featured work screenshots">
+        <div class="carousel__track">
+          <figure class="carousel__slide is-active">
+            <img class="carousel__img" src="https://opengraph.githubassets.com/1/dockdn/VoicePDFMemo" alt="VoicePDFMemo">
+          </figure>
+          <figure class="carousel__slide">
+            <img class="carousel__img" src="https://opengraph.githubassets.com/1/dockdn/AI-WorkLab" alt="AI WorkLab">
+          </figure>
+          <figure class="carousel__slide">
+            <img class="carousel__img" src="https://opengraph.githubassets.com/1/dockdn/game-masters" alt="Game Masters">
+          </figure>
+        </div>
+        <button class="carousel__ctrl carousel__prev" type="button" aria-label="Previous slide">‹</button>
+        <button class="carousel__ctrl carousel__next" type="button" aria-label="Next slide">›</button>
+        <div class="carousel__meta">
+          <span id="featuredCounter">1/3</span>
+          <div class="carousel__dots" aria-hidden="true">
+            <span class="carousel__dot is-active"></span>
+            <span class="carousel__dot"></span>
+            <span class="carousel__dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="pin__content">
+        <h3 class="pin__title">Featured Work</h3>
+        <p class="pin__text">VoicePDFMemo, AI WorkLab, and Game Masters.</p>
+        <a class="btn btn--primary" href="https://github.com/dockdn" target="_blank" rel="noopener">See more on GitHub</a>
+      </div>
+    </article>
+
+    <article class="pin">
+      <img class="pin__media ar-4x3" src="https://opengraph.githubassets.com/1/dockdn/VoicePDFMemo" alt="VoicePDFMemo">
+      <div class="pin__content">
+        <h3 class="pin__title">VoicePDFMemo</h3>
+        <p class="pin__text">A custom iOS application developed for Panther Siding &amp; Windows Inc. that digitizes the company's field contract workflow. Features include voice-to-text data entry, PDF generation, digital signatures, document management, and iCloud synchronization.</p>
+        <p class="pin__text">SwiftUI, Swift, PDFKit, Speech Framework, CloudKit, iOS</p>
+        <a class="btn btn--primary" href="https://github.com/dockdn/VoicePDFMemo" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
+    <article class="pin">
+      <img class="pin__media ar-4x3" src="https://opengraph.githubassets.com/1/dockdn/AI-WorkLab" alt="AI WorkLab">
+      <div class="pin__content">
+        <h3 class="pin__title">AI WorkLab</h3>
+        <p class="pin__text">An AI-powered productivity workspace for organizing projects, brainstorming ideas, managing tasks, and streamlining creative workflows.</p>
+        <p class="pin__text">Next.js, React, TypeScript, CSS, OpenAI Responses API</p>
+        <a class="btn btn--primary" href="https://github.com/dockdn/AI-WorkLab" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
+    <article class="pin">
+      <img class="pin__media ar-4x3" src="https://opengraph.githubassets.com/1/dockdn/game-masters" alt="Game Masters">
+      <div class="pin__content">
+        <h3 class="pin__title">Game Masters</h3>
+        <p class="pin__text">A modern gaming-focused web application showcasing responsive front-end development, clean UI design, and interactive user experiences.</p>
+        <p class="pin__text">HTML, CSS, JavaScript, Node.js, Express, MongoDB Atlas</p>
+        <a class="btn btn--primary" href="https://github.com/dockdn/game-masters" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </article>
+
     <article class="pin">
       <div class="carousel" id="mockupsCarousel" aria-label="Project mockups">
         <div class="carousel__track">
@@ -138,38 +200,6 @@
         <h3 class="pin__title">Join the Cause</h3>
         <p class="pin__text">Next.js + Spring Boot volunteer hub.</p>
         <a class="btn btn--primary" href="https://github.com/a-iqbal02/JoinTheCause" target="_blank" rel="noopener">View on GitHub</a>
-      </div>
-    </article>
-
-    <!-- FEATURED WORK -->
-    <article class="pin">
-      <div class="carousel" id="featuredCarousel" aria-label="Featured work screenshots">
-        <div class="carousel__track">
-          <figure class="carousel__slide is-active">
-            <img class="carousel__img" src="assets/img/racemelogo.png" alt="RaceMe">
-          </figure>
-          <figure class="carousel__slide">
-            <img class="carousel__img" src="assets/img/cinebyte.png" alt="CineByte">
-          </figure>
-          <figure class="carousel__slide">
-            <img class="carousel__img" src="assets/img/jointhecausefeature.png" alt="Join the Cause">
-          </figure>
-        </div>
-        <button class="carousel__ctrl carousel__prev" type="button" aria-label="Previous slide">‹</button>
-        <button class="carousel__ctrl carousel__next" type="button" aria-label="Next slide">›</button>
-        <div class="carousel__meta">
-          <span id="featuredCounter">1/3</span>
-          <div class="carousel__dots" aria-hidden="true">
-            <span class="carousel__dot is-active"></span>
-            <span class="carousel__dot"></span>
-            <span class="carousel__dot"></span>
-          </div>
-        </div>
-      </div>
-      <div class="pin__content">
-        <h3 class="pin__title">Featured Work</h3>
-        <p class="pin__text">RaceMe, CineByte, and Join the Cause.</p>
-        <a class="btn btn--primary" href="https://github.com/dockdn" target="_blank" rel="noopener">See more on GitHub</a>
       </div>
     </article>
 
