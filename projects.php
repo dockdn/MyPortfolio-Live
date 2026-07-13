@@ -112,30 +112,30 @@
     </article>
 
     <article class="pin">
-      <img class="pin__media ar-4x3" src="https://opengraph.githubassets.com/1/dockdn/VoicePDFMemo" alt="VoicePDFMemo">
+      <img class="pin__media ar-4x3" src="assets/img/voicepdfmemo-logo.png" alt="VoicePDFMemo">
       <div class="pin__content">
         <h3 class="pin__title">VoicePDFMemo</h3>
-        <p class="pin__text">A custom iOS application developed for Panther Siding &amp; Windows Inc. that digitizes the company's field contract workflow. Features include voice-to-text data entry, PDF generation, digital signatures, document management, and iCloud synchronization.</p>
+        <p class="pin__text">Voice-powered contract workflow app.</p>
         <p class="pin__text">SwiftUI, Swift, PDFKit, Speech Framework, CloudKit, iOS</p>
         <a class="btn btn--primary" href="https://github.com/dockdn/VoicePDFMemo" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </article>
 
     <article class="pin">
-      <img class="pin__media ar-4x3" src="https://opengraph.githubassets.com/1/dockdn/AI-WorkLab" alt="AI WorkLab">
+      <img class="pin__media ar-4x3" src="assets/img/aiworklab-logo.png" alt="AI WorkLab">
       <div class="pin__content">
         <h3 class="pin__title">AI WorkLab</h3>
-        <p class="pin__text">An AI-powered productivity workspace for organizing projects, brainstorming ideas, managing tasks, and streamlining creative workflows.</p>
+        <p class="pin__text">AI productivity workspace platform.</p>
         <p class="pin__text">Next.js, React, TypeScript, CSS, OpenAI Responses API</p>
         <a class="btn btn--primary" href="https://github.com/dockdn/AI-WorkLab" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </article>
 
     <article class="pin">
-      <img class="pin__media ar-4x3" src="https://opengraph.githubassets.com/1/dockdn/game-masters" alt="Game Masters">
+      <img class="pin__media ar-4x3" src="assets/img/gamemasters-logo.png" alt="Game Masters">
       <div class="pin__content">
         <h3 class="pin__title">Game Masters</h3>
-        <p class="pin__text">A modern gaming-focused web application showcasing responsive front-end development, clean UI design, and interactive user experiences.</p>
+        <p class="pin__text">Retro trivia game platform.</p>
         <p class="pin__text">HTML, CSS, JavaScript, Node.js, Express, MongoDB Atlas</p>
         <a class="btn btn--primary" href="https://github.com/dockdn/game-masters" target="_blank" rel="noopener">View on GitHub</a>
       </div>
