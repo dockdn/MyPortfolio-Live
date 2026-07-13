@@ -5,24 +5,24 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About • Danielle</title>
-  <link rel="icon" type="image/png" href="/MyPortfolio/assets/img/favicon.png">
-  <link rel="stylesheet" href="/MyPortfolio/assets/css/style.css?v=104">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css?v=104">
 </head>
 <body>
 <div class="site-wrap">
 
   <header class="header">
-    <a class="brand" href="/MyPortfolio/index.php">
+    <a class="brand" href="/index.php">
       <img src="assets/img/logo.png" alt="Danielle Logo" class="brand__logo-img">
       <span class="brand__text">Danielle.</span>
     </a>
     <nav class="nav">
-      <a href="/MyPortfolio/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
-      <a href="/MyPortfolio/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
-      <a href="/MyPortfolio/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
-      <a href="/MyPortfolio/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
-      <a href="/MyPortfolio/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
-      <a href="/MyPortfolio/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
+      <a href="/about.php"     <?php if(basename($_SERVER['PHP_SELF'])=='about.php')     echo 'aria-current="page"'; ?>>About</a>
+      <a href="/family.php"    <?php if(basename($_SERVER['PHP_SELF'])=='family.php')    echo 'aria-current="page"'; ?>>Family</a>
+      <a href="/projects.php"  <?php if(basename($_SERVER['PHP_SELF'])=='projects.php')  echo 'aria-current="page"'; ?>>Projects</a>
+      <a href="/favorites.php" <?php if(basename($_SERVER['PHP_SELF'])=='favorites.php') echo 'aria-current="page"'; ?>>Favorites</a>
+      <a href="/resume.php"    <?php if(basename($_SERVER['PHP_SELF'])=='resume.php')    echo 'aria-current="page"'; ?>>Resume</a>
+      <a href="/connect.php"   <?php if(basename($_SERVER['PHP_SELF'])=='connect.php')   echo 'aria-current="page"'; ?>>Connect</a>
     </nav>
   </header>
 
@@ -45,7 +45,7 @@
         <h3 class="pin__title">Projects</h3>
         <p class="pin__text">RaceMe, CineByte, Join the Cause…</p>
         <!-- ADDED: button to Projects page -->
-        <a class="btn" href="/MyPortfolio/projects.php">View Projects</a>
+        <a class="btn" href="/projects.php">View Projects</a>
       </div>
     </article>
 
@@ -55,7 +55,7 @@
         <h3 class="pin__title">Family</h3>
         <p class="pin__text">Snapshot of my people.</p>
         <!-- ADDED: button to Family page -->
-        <a class="btn" href="/MyPortfolio/family.php">View Family</a>
+        <a class="btn" href="/family.php">View Family</a>
       </div>
     </article>
 
@@ -65,7 +65,7 @@
         <h3 class="pin__title">Favorite Things</h3>
         <p class="pin__text">Hello Kitty, Computing, Books, Fast Food…</p>
         <!-- ADDED: button to Favorites page -->
-        <a class="btn" href="/MyPortfolio/favorites.php">View Favorites</a>
+        <a class="btn" href="/favorites.php">View Favorites</a>
       </div>
     </article>
 
@@ -74,7 +74,7 @@
       <div class="pin__content">
         <h3 class="pin__title">Resume</h3>
         <!-- CHANGED: link points to your Resume page -->
-        <a class="btn" href="/MyPortfolio/resume.php">View Resume</a>
+        <a class="btn" href="/resume.php">View Resume</a>
       </div>
     </article>
 
@@ -83,7 +83,7 @@
       <div class="pin__content">
         <h3 class="pin__title">Reach Out!</h3>
         <!-- CHANGED: link points to your Connect page -->
-        <a class="btn" href="/MyPortfolio/connect.php">Connect</a>
+        <a class="btn" href="/connect.php">Connect</a>
       </div>
     </article>
   </section>
