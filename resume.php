@@ -87,10 +87,11 @@
         <h3 class="pin__title">My Resume (PDF)</h3>
         <div class="pin__actions">
         <?php
-          $resumeUrl = '/assets/css/docs/resume.pdf';       
-          $resumeFs  = $_SERVER['DOCUMENT_ROOT'] . $resumeUrl;            
+          $resumeUrl = '/assets/css/docs/resume.pdf';
+          $resumeFs  = $_SERVER['DOCUMENT_ROOT'] . $resumeUrl;
+          $resumeHref = $resumeUrl . '?v=' . (file_exists($resumeFs) ? filemtime($resumeFs) : time());
           if (file_exists($resumeFs)) {
-            echo '<a class="btn btn--primary btn--icon" href="'.$resumeUrl.'" target="_blank" rel="noopener" aria-label="Open resume PDF">📄 <span>Open PDF</span></a>';
+            echo '<a class="btn btn--primary btn--icon" href="'.$resumeHref.'" target="_blank" rel="noopener" aria-label="Open resume PDF">📄 <span>Open PDF</span></a>';
           } else {
             echo '<p class="pin__text"><i>PDF not found.</i><br>Place your file at:<br><span class="mono">'.$resumeUrl.'</span></p>';
           }
@@ -134,10 +135,10 @@
   const modal     = document.getElementById('pdfModal');
   const pdfFrame  = document.getElementById('pdfFrame');
   const closeBtn  = document.getElementById('closeModalBtn');
-  const RESUME_URL = '/assets/css/docs/resume.pdf';
+  const RESUME_URL = '/assets/css/docs/resume.pdf?v=<?php echo file_exists($_SERVER["DOCUMENT_ROOT"] . "/assets/css/docs/resume.pdf") ? filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/docs/resume.pdf") : time(); ?>';
 
   viewBtn?.addEventListener('click', () => {
-    pdfFrame.src = RESUME_URL + '?v=' + Date.now();
+    pdfFrame.src = RESUME_URL;
     if (typeof modal.showModal === 'function') {
       try { modal.showModal(); } catch (e) { window.open(RESUME_URL, '_blank'); }
     } else {

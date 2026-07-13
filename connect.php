@@ -104,10 +104,11 @@
       <div class="pin__content">
         <h3 class="pin__title">Resume</h3>
         <?php
-          $resumeUrl = '/assets/css/docs/resume.pdf';       
-          $resumeFs  = $_SERVER['DOCUMENT_ROOT'] . $resumeUrl;            
+          $resumeUrl = '/assets/css/docs/resume.pdf';
+          $resumeFs  = $_SERVER['DOCUMENT_ROOT'] . $resumeUrl;
+          $resumeHref = $resumeUrl . '?v=' . (file_exists($resumeFs) ? filemtime($resumeFs) : time());
           if (file_exists($resumeFs)) {
-            echo '<a class="btn btn--primary btn--icon" href="'.$resumeUrl.'" target="_blank" rel="noopener" aria-label="Open resume PDF">📄 <span>Open PDF</span></a>';
+            echo '<a class="btn btn--primary btn--icon" href="'.$resumeHref.'" target="_blank" rel="noopener" aria-label="Open resume PDF">📄 <span>Open PDF</span></a>';
           } else {
             echo '<p class="pin__text"><i>PDF not found.</i><br>Place your file at:<br><span class="mono">'.$resumeUrl.'</span></p>';
           }
