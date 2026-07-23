@@ -103,7 +103,29 @@
       <img class="pin__media" src="/assets/img/lettershero.png" alt="Letters of Recommendation">
       <div class="pin__content">
         <h3 class="pin__title">Letters of Recommendation</h3>
-        <p class="pin__text">Please wait with me as my letters are being written. ❤️ </p>
+        <p class="pin__text">A few recommendation letters from people I have worked with and learned from.</p>
+        <div class="pin__actions">
+        <?php
+          $pantherLetterUrl = '/assets/css/docs/panther-letter-of-recommendation.pdf';
+          $pantherLetterFs  = $_SERVER['DOCUMENT_ROOT'] . $pantherLetterUrl;
+          $pantherLetterHref = $pantherLetterUrl . '?v=' . (file_exists($pantherLetterFs) ? filemtime($pantherLetterFs) : time());
+          $kncLetterUrl = '/assets/css/docs/knc-letter-of-recommendation.pdf';
+          $kncLetterFs  = $_SERVER['DOCUMENT_ROOT'] . $kncLetterUrl;
+          $kncLetterHref = $kncLetterUrl . '?v=' . (file_exists($kncLetterFs) ? filemtime($kncLetterFs) : time());
+
+          if (file_exists($pantherLetterFs)) {
+            echo '<a class="btn btn--primary btn--icon" href="'.$pantherLetterHref.'" target="_blank" rel="noopener" aria-label="Open Panther letter of recommendation PDF">📄 <span>Open Panther Letter</span></a>';
+          } else {
+            echo '<p class="pin__text"><i>PDF not found.</i><br>Place your file at:<br><span class="mono">'.$pantherLetterUrl.'</span></p>';
+          }
+
+          if (file_exists($kncLetterFs)) {
+            echo '<a class="btn btn--primary btn--icon" href="'.$kncLetterHref.'" target="_blank" rel="noopener" aria-label="Open KNC letter of recommendation PDF">📄 <span>Open KNC Letter</span></a>';
+          } else {
+            echo '<p class="pin__text"><i>PDF not found.</i><br>Place your file at:<br><span class="mono">'.$kncLetterUrl.'</span></p>';
+          }
+        ?>
+        </div>
       </div>
     </article>
 
